@@ -2,10 +2,14 @@
 O Maturador de Chip é uma aplicação desenvolvida para automatizar interações com o objetivo de realizar o processo de maturação (aquecimento) de números recém-ativados.
 
 # Tecnologias Utilizadas
-- Banco de dados 
+- Banco de dados
+
 - Evolution API
+
 - N8N com javascript
+  
 - Node.js
+  
 - Biblioteca de automação do WA Web 
 
 # Requisitos
