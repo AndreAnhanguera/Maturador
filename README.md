@@ -14,7 +14,6 @@ O Maturador de Chip é uma aplicação desenvolvida para automatizar interaçõe
   
 ![WA](https://img.shields.io/badge/WA_Web-brightgreen?style=for-the-badge) - Biblioteca de automação do WA Web 
 
-## Requisitos
 # Requisitos funcionais:
 - RF01 – **Cadastro de Chips.**
 - RF02 – **Integração com WA Web.**
