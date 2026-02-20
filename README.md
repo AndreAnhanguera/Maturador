@@ -12,7 +12,7 @@ O Maturador de Chip é uma aplicação desenvolvida para automatizar interaçõe
   
 ![NJ](https://img.shields.io/badge/NJ-FF6F00?style=for-the-badge&logo=white) - Node.js
   
-![WA](https://img.shields.io/badge/WA-Web-green?style=for-the-badge) - Biblioteca de automação do WA Web 
+![WA](https://img.shields.io/badge/WA_Web-brightgreen?style=for-the-badge) - Biblioteca de automação do WA Web 
 
 # Requisitos
 **Requisitos funcionais:**
