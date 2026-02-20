@@ -15,7 +15,7 @@ O Maturador de Chip é uma aplicação desenvolvida para automatizar interaçõe
 ![WA](https://img.shields.io/badge/WA_Web-brightgreen?style=for-the-badge) - Biblioteca de automação do WA Web 
 
 ## Requisitos
-#Requisitos funcionais:
+# Requisitos funcionais:
 - RF01 – **Cadastro de Chips.**
 - RF02 – **Integração com WA Web.**
 - RF03 – **Envio automatizado de mensagens.**
@@ -26,7 +26,7 @@ O Maturador de Chip é uma aplicação desenvolvida para automatizar interaçõe
 - RF08 – **Autenticação e Validação de Login.**
 - RF09 – **Geração de texto com API de IA Generativa.**
 
-#Requisitos Não-funcionais:
+# Requisitos Não-funcionais:
 - RNF01 - **Suportar execução simultânea de múltiplas sessões WA Web.**
 - RNF02 - **Processamento eficiente.**
 - RNF03 – **Atualizações sem impacto nos processos ativos.**
