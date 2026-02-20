@@ -1,8 +1,6 @@
 ## 📱 Maturador
 O Maturador de Chip é uma aplicação desenvolvida para automatizar interações com o objetivo de realizar o processo de maturação (aquecimento) de números recém-ativados.
 
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-
 ## Tecnologias Utilizadas
 ![Database](https://img.shields.io/badge/Database_Design-4479A1?style=for-the-badge&logo=white) - Banco de dados
 
