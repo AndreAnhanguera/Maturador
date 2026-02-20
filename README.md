@@ -6,13 +6,13 @@ O Maturador de Chip é uma aplicação desenvolvida para automatizar interaçõe
 # Tecnologias Utilizadas
 ![Database](https://img.shields.io/badge/Database_Design-4479A1?style=for-the-badge&logo=mysql&logoColor=white) - Banco de dados
 
-![API](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) - Evolution API
+![API](https://img.shields.io/badge/API-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) - Evolution API
 
-![N8N](https://img.shields.io/badge/SQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)- N8N com javascript
+![N8N](https://img.shields.io/badge/N8N-00758F?style=for-the-badge&logo=mysql&logoColor=white)- N8N com javascript
   
-![NJ](https://img.shields.io/badge/Data_Modeling-FF6F00?style=for-the-badge&logo=diagrams.net&logoColor=white) - Node.js
+![NJ](https://img.shields.io/badge/NJ-FF6F00?style=for-the-badge&logo=diagrams.net&logoColor=white) - Node.js
   
-![WA](https://img.shields.io/badge/web-brightgreen?style=for-the-badge) - Biblioteca de automação do WA Web 
+![WA](https://img.shields.io/badge/WA-Web-brightgreen?style=for-the-badge) - Biblioteca de automação do WA Web 
 
 # Requisitos
 **Requisitos funcionais:**
