@@ -6,7 +6,7 @@ O Maturador de Chip é uma aplicação desenvolvida para automatizar interaçõe
 # Tecnologias Utilizadas
 ![Database](https://img.shields.io/badge/Database_Design-4479A1?style=for-the-badge&logo=mysql&logoColor=white) - Banco de dados
 
-![API](https://img.shields.io/badge/API-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) - Evolution API
+![API](https://img.shields.io/badge/API-%2300f.svg?style=for-the-badge&logo=white) - Evolution API
 
 ![N8N](https://img.shields.io/badge/N8N-00758F?style=for-the-badge&logo=mysql&logoColor=white)- N8N com javascript
   
