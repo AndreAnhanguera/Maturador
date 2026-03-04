@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instância - Maturador</title>
+  <link rel="stylesheet" href="style.css">
+  <style> #meta { padding:10px; background:#f7f7f7; border-bottom:1px solid #ddd; } </style>
+</head>
+<body>
+  <div id="meta">
+    <strong>Instância de maturação</strong>
+    <div id="chipInfo"></div>
+    <div style="margin-top:8px;"><button id="openExternal">Abrir WhatsApp no navegador externo</button></div>
+  </div>
+  <div style="height:calc(100vh - 80px)">
+    <webview id="waWebview" src="https://web.whatsapp.com" style="width:100%; height:100%;"></webview>
+  </div>
+  <script src="instanceRenderer.js"></script>
+</body>
+</html>

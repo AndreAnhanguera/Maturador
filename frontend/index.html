@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automação de Maturação de Chips</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Automação de Maturação de Chips</h1>
+    <form id="automation-form">
+      <div class="form-group">
+        <label for="chipId">ID do Chip:</label>
+        <input type="text" id="chipId" required>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Número de Telefone:</label>
+        <input type="text" id="phoneNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" rows="3" required></textarea>
+      </div>
+      <button type="submit">Abrir instância (nova janela)</button>
+    </form>
+    <div style="margin-top:10px;">
+      <button id="open-wa">Abrir WhatsApp Web (navegador externo)</button>
+    </div>
+
+    <div id="status"></div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

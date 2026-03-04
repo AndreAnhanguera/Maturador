@@ -1,0 +1,15 @@
+{
+  "name": "maturador",
+  "version": "1.0.0",
+  "description": "Aplicação de automação de maturação de chips via WhatsApp Web",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.0.0"
+  }
+}
