@@ -3,46 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Automação de Maturação de Chips</title>
+  <title>Uranium System</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="app-shell">
     <section class="container">
       <header class="hero">
-        <span class="badge">Maturador</span>
-        <h1>Automação de Maturação de Chips</h1>
-        <p>Cadastre múltiplos números e prepare a comunicação entre eles em poucos cliques.</p>
+        <h1>Uranium System</h1>
       </header>
 
       <form id="automation-form" class="panel">
         <div class="form-group">
-          <label for="chipId">ID do Chip</label>
-          <input type="text" id="chipId" placeholder="Ex.: chip-01" required>
+          <div class="form-column">
+              <div class="form-group">
+                <label for="chipId">ID do Chip</label>
+                <input type="text" id="chipId" placeholder="Ex.: chip-01" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phoneNumber">Cadastrar número na lista</label>
+                <div class="row-input">
+                  <input type="text" id="phoneNumber" placeholder="Ex.: 5511999999999">
+                  <button type="button" id="add-number" class="btn-secondary">Adicionar</button>
+                </div>
+                <small>Cadastre pelo menos 2 números para envio de mensagens entre si.</small>
+                <ul id="numbers-list"></ul>
+              </div>
+            </div>
+
+            <div class="form-column">
+              <div class="form-group">
+                <label for="message">Mensagem (modelo)</label>
+                <textarea id="message" rows="4" placeholder="Olá {destinatario}, tudo bem?" required></textarea>
+                <small>Use <code>{destinatario}</code> para inserir o destino automaticamente.</small>
+              </div>
+
+              <button type="submit" class="btn-primary">Abrir instâncias para comunicação entre todos</button>
+            </div>
         </div>
 
-        <div class="form-group">
-          <label for="phoneNumber">Cadastrar número na lista</label>
-          <div class="row-input">
-            <input type="text" id="phoneNumber" placeholder="Ex.: 5511999999999">
-            <button type="button" id="add-number" class="btn-secondary">Adicionar</button>
-          </div>
-          <small>Cadastre pelo menos 2 números para envio de mensagens entre si.</small>
-          <ul id="numbers-list"></ul>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Mensagem (modelo)</label>
-          <textarea id="message" rows="4" placeholder="Olá {destinatario}, tudo bem?" required></textarea>
-          <small>Use <code>{destinatario}</code> para inserir o destino automaticamente.</small>
-        </div>
-
-        <button type="submit" class="btn-primary">Abrir instâncias para comunicação entre todos</button>
       </form>
-
-      <div class="actions-row">
-        <button id="open-wa" class="btn-outline">Abrir WhatsApp Web (navegador externo)</button>
-      </div>
       
       <div id="status" class="panel status"></div>
     </section>

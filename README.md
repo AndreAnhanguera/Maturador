@@ -42,7 +42,7 @@ O diretório principal da interface está em `frontend/` e inclui:
 - `package.json` – configura o projeto Electron.
 - `main.js` – processo principal que cria a janela.
 - `preload.js` – pontes (bridge) seguras para o renderer, se precisar.
-- `index.html` – marcação da interface.
+- `index.html` – marcação da interface.y
 - `style.css` – estilos básicos.
 - `renderer.js` – lógica de interface, eventos e chamadas às APIs.
 
