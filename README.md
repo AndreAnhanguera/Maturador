@@ -1,4 +1,4 @@
-## 📱 Maturador
+# **📱 Maturador**
 O Maturador de Chip é uma aplicação desenvolvida para automatizar interações com o objetivo de realizar o processo de maturação (aquecimento) de números recém-ativados.
 
 ## Tecnologias Utilizadas
@@ -12,7 +12,7 @@ O Maturador de Chip é uma aplicação desenvolvida para automatizar interaçõe
   
 ![WA](https://img.shields.io/badge/WA_Web-brightgreen?style=for-the-badge) - Biblioteca de automação do WA Web 
 
-# Requisitos funcionais:
+## Requisitos funcionais:
 - RF01 – **Cadastro de Chips.**
 - RF02 – **Integração com WA Web.**
 - RF03 – **Envio automatizado de mensagens.**
