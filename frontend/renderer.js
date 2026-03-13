@@ -134,3 +134,35 @@ async function sendMessage(phoneNumber, text) {
   if (!resp.ok) throw new Error('Falha ao enviar mensagem');
   return resp.json();
 }
+
+particlesJS("particles-js", {
+
+particles: {
+
+number: {
+value: 80
+},
+
+color: {
+value: "#ffffff"
+},
+
+shape: {
+type: "circle"
+},
+
+opacity: {
+value: 0.5
+},
+
+size: {
+value: 3
+},
+
+move: {
+speed: 2
+}
+
+}
+
+});
