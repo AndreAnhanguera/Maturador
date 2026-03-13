@@ -166,3 +166,34 @@ speed: 2
 }
 
 });
+
+// Efeito de Interatividade do Título
+const title = document.getElementById('interactive-title');
+
+document.addEventListener('mousemove', (e) => {
+  const { clientX, clientY } = e;
+  const { innerWidth, innerHeight } = window;
+
+  // Calcula a rotação (suave)
+  const xRotation = ((clientY / innerHeight) - 0.5) * 15;
+  const yRotation = ((clientX / innerWidth) - 0.5) * -15;
+
+  if (title) {
+    title.style.transform = `rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
+    
+    // Brilho dinâmico (glow)
+    const shadowX = (clientX / innerWidth - 0.5) * 10;
+    const shadowY = (clientY / innerHeight - 0.5) * 10;
+    title.style.filter = `drop-shadow(${shadowX}px ${shadowY}px 15px rgba(0, 210, 255, 0.4))`;
+  }
+});
+
+// Reseta o título quando o mouse sai da janela
+document.addEventListener('mouseleave', () => {
+  if (title) {
+    title.style.transform = `rotateX(0deg) rotateY(0deg)`;
+    title.style.filter = `drop-shadow(0px 0px 0px rgba(0,0,0,0))`;
+  }
+});
+
+// --- O restante do seu código de automação (N8N, Evolution API, etc) continua abaixo ---
