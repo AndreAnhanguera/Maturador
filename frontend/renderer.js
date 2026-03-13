@@ -57,10 +57,13 @@ form.addEventListener('submit', async (e) => {
   }
 });
 
-document.getElementById('open-wa').addEventListener('click', async () => {
-  setStatus('Abrindo WhatsApp Web no navegador externo...');
-  await window.electronAPI.openExternal('https://web.whatsapp.com');
-});
+const openWaButton = document.getElementById('open-wa');
+if (openWaButton) {
+  openWaButton.addEventListener('click', async () => {
+    setStatus('Abrindo WhatsApp Web no navegador externo...');
+    await window.electronAPI.openExternal('https://web.whatsapp.com');
+  });
+}
 
 function buildMessageForNumber(template, destinationNumber) {
   if (!template.includes('{destinatario}')) {
@@ -135,7 +138,8 @@ async function sendMessage(phoneNumber, text) {
   return resp.json();
 }
 
-particlesJS("particles-js", {
+if (typeof particlesJS === 'function') {
+  particlesJS('particles-js', {
 
 particles: {
 
@@ -165,7 +169,10 @@ speed: 2
 
 }
 
-});
+  });
+} else {
+  console.warn('particles.js não foi carregado corretamente.');
+}
 
 // Efeito de Interatividade do Título
 const title = document.getElementById('interactive-title');
