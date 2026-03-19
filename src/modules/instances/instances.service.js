@@ -6,6 +6,11 @@ export async function listInstances() {
   return result.rows;
 }
 
+export async function getInstanceById(id) {
+  const result = await query('SELECT * FROM instances WHERE id = $1', [id]);
+  return result.rows[0] || null;
+}
+
 export async function createInstance(data) {
   const result = await query(
     `INSERT INTO instances (chip_id, instance_name)
@@ -29,6 +34,32 @@ export async function createInstance(data) {
      WHERE id = $1
      RETURNING *`,
     [row.id, sessionStatus, qrCode]
+  );
+
+  return updated.rows[0];
+}
+
+export async function deleteInstance(id) {
+  await query('DELETE FROM instances WHERE id = $1', [id]);
+  return { success: true };
+}
+
+export async function reconnectInstance(id) {
+  const row = await getInstanceById(id);
+  if (!row) return null;
+
+  const evo = await createEvolutionInstance({ instanceName: row.instance_name });
+  const sessionStatus = evo?.instance?.status || evo?.status || 'pending';
+  const qrCode = evo?.qrcode?.base64 || evo?.base64 || null;
+
+  const updated = await query(
+    `UPDATE instances
+     SET session_status = $2,
+         qr_code = COALESCE($3, qr_code),
+         updated_at = NOW()
+     WHERE id = $1
+     RETURNING *`,
+    [id, sessionStatus, qrCode]
   );
 
   return updated.rows[0];

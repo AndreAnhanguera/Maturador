@@ -252,9 +252,9 @@ z-index:-1;
   /* Gradiente Animado */
   background: linear-gradient(
     to right, 
-    #00d2ff, 
-    #ffffff, 
-    #00d2ff
+    #00ffd5, 
+    #c8fff8, 
+    #00ffd5
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
