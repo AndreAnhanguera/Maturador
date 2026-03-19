@@ -240,6 +240,16 @@ z-index:-1;
 
 }
 
+.form-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.col {
+  min-width: 0;
+}
+
 /* Estilo do Título Moderno */
 .modern-title {
   font-size: 2.8rem; /* Ajuste conforme necessário */
