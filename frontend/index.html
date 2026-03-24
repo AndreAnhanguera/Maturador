@@ -17,9 +17,9 @@
         </h1>
       </header>
 
-        <form id="automation-form" class="panel">
+        <form id="automation-form" >
         <div class="form-columns">
-          <div class="col">
+          <div class="col panel">
               <div class="form-group">
                 <label for="chipId">ID do Chip</label>
                 <input type="text" id="chipId" placeholder="Ex.: chip-01" required>
@@ -36,7 +36,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col panel">
               <div class="form-group">
                 <label for="message">Mensagem (modelo)</label>
                 <textarea id="message" rows="4" placeholder="Olá {destinatario}, tudo bem?" required></textarea>
@@ -45,11 +45,12 @@
 
               <button type="submit" class="btn-primary">Abrir instâncias para comunicação entre todos</button>
             </div>
+
         </div>
 
       </form>
       
-      <div id="status" class="panel status"></div>
+      <!--<div id="status" class="panel status"></div>-->
     </section>
   </main>
   <script src="renderer.js"></script>
